@@ -3,11 +3,18 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Naked twins provides constraint propagation by:
+* Find the naked twins or boxes with identical value pairs
+* The peer boxes of the identical pairs cannot contain the naked twin values
+* Eliminate the values in peer boxes
+* Increase performance calling the `naked_twins` method on the values dictionary by decreasing the number of possible values for a given box
+
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Diagonal sudoku provides constraint propogation by:
+* Diagonal units must contain values 1-9
+* Adding diagonal units to the units list adds an additional contraint to the only `only_choice` method 
 
 ### Install
 
